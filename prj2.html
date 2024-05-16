@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Restaurant Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #12013d;
+            color: #f6f6f6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: relative;
+            text-align: center;
+            height: 100vh;
+            
+        }
+
+        #video-bg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+        }
+
+        header h1 {
+            color: #f39c12;
+            margin-top: 20px;
+        }
+
+        header p {
+            color: #fff;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #e67e22;
+        }
+
+        section {
+            padding: 20px;
+
+            background-color: #ead12e;
+            text-align: center;
+            background-image: url('bck2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            border-top: 1px solid #f39c12;
+
+        }
+
+        section h2 {
+            color: #f5f0f0;
+            text-align: center;
+        }
+
+        section ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 auto;
+            display: inline-block;
+            text-align: left;
+        }
+
+        section ul li {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        section ul li img {
+            width: 150px;
+            height: 100px;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+
+        .dish-info {
+            flex: 1;
+        }
+
+        .btn {
+            background-color: #d1960bf3;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            font-size: 16px;
+            border-radius: 5px;
+            
+        }
+
+        .btn:hover {
+            background-color: #e67e22;
+        }
+
+        footer {
+            background-color: #f39c12;
+            color: #b30808;
+            padding: 20px;
+            text-align: center;
+        
+        }
+
+        footer nav ul {
+            padding: 0;
+            margin-bottom: 10px;
+        }
+
+
+        footer nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .centered {
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <video id="video-bg" autoplay muted loop>
+            <source src="mjau.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h1>Welcome to Our Restaurant</h1>
+        <p>Working Hours: Monday to Saturday, 10:00 AM - 10:00 PM</p>
+        <nav>
+            <ul>
+                <li><a href="#appetizers">Appetizers</a></li>
+                <li><a href="#mains">Main Courses</a></li>
+                <li><a href="#desserts">Desserts</a></li>
+                <li><a href="#drinks">Drinks</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="appetizers">
+        <h2>Appetizers</h2>
+        <ul>
+            <li>
+                <img src="appetizer1.jpg" alt="Bruschetta">
+                <div class="dish-info">
+                    <h3>Bruschetta</h3>
+                    <p>Traditional  -  grilled bread rubbed with garlic and topped with tomatoes, olive oil,and with salt-pepper.</p>
+                    <p>$8</p>
+                </div>
+                <button class="btn">Order Now</button>
+            </li>
+            <li>
+                <img src="appetizer2.jpg" alt="Mozzarella Sticks">
+                <div class="dish-info">
+                    <h3>Mozzarella Sticks</h3>
+                    <p>Golden and crispy mozzarella sticks served with marinara sauce for dipping.</p>
+                    <p>$7</p>
+                </div>
+                <button class="btn">Order Now</button>
+            </li>
+            <li>
+                <img src="appetizer3.jpg" alt="Chicken Wings">
+                <div class="dish-info">
+                    <h3>Chicken Wings</h3>
+                    <p>Spicy and succulent chicken wings served with your choice of dipping sauce.</p>
+                    <p>$10</p>
+                </div>
+                <button class="btn">Order Now</button>
+            </li>
+            <li>
+                <img src="appetizer4.jpg" alt="Deviled Eggs">
+                <div class="dish-info">
+                    <h3>Deviled Eggs</h3>
+                    <p>Garnish them with chopped chives, dill, and/or smoked paprika for a fun and festive look.</p>
+                    <p>$9</p>
+                </div>
+                <button class="btn">Order Now</button>
+            </li>
+        </ul>
+    </section>
+
+    <section id="mains">
+        <h2>Main Courses</h2>
+        <ul>
+            <li>
+                <img src="main1.jpg" alt="Spaghetti Bolognese">
+                <div class="dish-info">
+                    <h3>Spaghetti Bolognese</h3>
+                    <p>Classic Italian pasta dish featuring spaghetti noodles tossed in a rich and savory meat sauce.</p>
+                    <p>$12</p>
+                </div>
+                <button class="btn">Order Now</button>
+            </li>
+            <li>
+                <img src="main2.jpg" alt="Grilled Salmon">
+                <div class="dish-info">
+                    <h3>Grilled Salmon</h3>
+                    <p>Grilled salmon fillet served with a side of seasonal vegetables and your choice of starch.</p>
+                    <p>$15</p>
+                </div>
+                <button class="btn">Order Now</button>
+            </li>
+            <li>
+                <img src="main3.jpg" alt="Pizza">
+                <div class="dish-info">
+                    <h3>Pizza Bejza</h3>
+                    <p>Signature bejza pizza topped with fresh ingredients and baked to perfection in our wood-fired oven.</p>
+                    <p>$11</p>
+                </div>
+                <button class="btn">Order Now</button>
+            </li>
+            <li>
+                <img src="main4.jpg" alt="Austrian wiener schnitzel">
+                <div class="dish-info">
+                    <h3>Austrian Wiener Schnitzel</h3>
+                    <p>For a meaty main with a difference, try this wiener schnitzel – the national dish of Austria.</p>
+                    <p>$18</p>
+                </div>
+                <button class="btn">Order Now</button>
+            </li>
+        </ul>
+    </section>
+
+    <section id="desserts">
+        <h2>Desserts</h2>
+        <ul>
+            <li>
+                <img src="dessert1.jpg" alt="Chocolate Cake">
+                <div class="dish-info">
+                    <h3>Chocolate Cake</h3>
+                    <p>Decadent chocolate cake served with a scoop of vanilla ice cream.</p>
+                    <p>$6</p>
+                </div>
+                <button class="btn">Order Now</button>
+            </li>
+            <li>
+                <img src="dessert2.jpg" alt="Apple Pie">
+                <div class="dish-info">
+                    <h3>Apple Pie</h3>
+                    <p>New Apple pie: golden crust, cinnamon kissed apples a timeless class, comforting with each bite.</p>
+                    <p>$5</p>
+                </div>
+                <button class="btn">Order Now</button>
+            </li>
+            <li>
+                <img src="dessert3.jpg" alt="Ice Cream">
+                <div class="dish-info">
+                    <h3>Ice Cream</h3>
+                    <p>A variety of flavors of homemade ice cream, made with the finest ingredients.</p>
+                    <p>$4</p>
+                </div>
+                <button class="btn">Order Now</button>
+            </li>
+            <li>
+                <img src="dessert4.jpg" alt="Tiramisu">
+                <div class="dish-info">
+                    <h3>Tiramisu</h3>
+                    <p>Balanced with just the right amount of bitterness from the coffee, liquor, and cocoa powder.</p>
+                    <p>$7</p>
+                </div>
+                <button class="btn">Order Now</button>
+            </li>
+        </ul>
+    </section>
+
+    <section id="drinks">
+        <h2>Drinks</h2>
+        <ul>
+            <li>
+                <img src="drink1.jpg" alt="Soda">
+                <div class="dish-info">
+                    <h3>Soda</h3>
+                    <p>Your choice of carbonated soft drink, served chilled with ice.</p>
+                    <p>$2</p>
+                </div>
+                <button class="btn">Order Now</button>
+            </li>
+            <li>
+                <img src="drink2.jpg" alt="Water">
+                <div class="dish-info">
+                    <h3>Water</h3>
+                    <p>Purified still or sparkling water served in a chilled glass.</p>
+                    <p>$1</p>
+                </div>
+                <button class="btn">Order Now</button>
+            </li>
+            <li>
+                <img src="drink3.jpg" alt="Beer">
+                <div class="dish-info">
+                    <h3>Beer</h3>
+                    <p>A selection of local and imported beers, served cold in bottles or on tap.</p>
+                    <p>$4</p>
+                </div>
+                <button class="btn">Order Now</button>
+            </li>
+            <li>
+                <img src="drink4.jpg" alt="Three Berry Wine">
+                <div class="dish-info">
+                    <h3>Three Berry Wine</h3>
+                    <p>This wine is made from pure berries, lightly sweetened, and balanced with a beautiful berry finish.</p>
+                    <p>$19.99</p>
+                </div>
+                <button class="btn">Order Now</button>
+            </li>
+        </ul>
+    </section>
+
+
+    <section id="location" class="centered">
+        <h2>Location</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5755.733399538559!2d18.3233077005646!3d43.83786180884247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sbs!2sba!4v1711900721342!5m2!1sbs!2sba" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section id="reservation" class="centered">
+        <h2>Reservation</h2>
+        <form>
+            <label>Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label>Message:</label><br>
+            <textarea rows="4" cols="50"></textarea><br>
+            <button class="btn" type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="about" class="centered">
+        <h2>About Us</h2>
+        <p>Welcome to Bejza Restaurant, where we pride ourselves on offering a delectable culinary experience in a cozy and inviting atmosphere. Our menu features a delightful selection of appetizers, main courses, desserts, and beverages, carefully crafted to tantalize your taste buds.</p>
+        <p>At Bejza, we are passionate about delivering exceptional service and using only the freshest ingredients to create mouthwatering dishes that cater to every palate. Whether you're craving classic comfort food or exploring adventurous flavors, our menu has something for everyone.</p>
+        <p>Come join us and indulge in a culinary journey that promises to delight your senses and leave you craving for more. We look forward to welcoming you to Bejza Restaurant!</p>
+    </section>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+            </ul>
+        </nav>
+        <p> 2024 Bejza Restaurant. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
